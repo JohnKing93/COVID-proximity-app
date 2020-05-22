@@ -1,11 +1,11 @@
 module.exports = function(sequelize, DataTypes) {
   var Coordinates = sequelize.define("Coordinates", {
     lat: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DOUBLE,
       allowNull: false
     },
     long: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DOUBLE,
       allowNull: false
     }
   });
