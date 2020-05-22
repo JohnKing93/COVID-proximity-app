@@ -12,7 +12,8 @@ module.exports = function(app) {
         res.json(data);
       })
       .catch(error => {
-        console.log("Error:", error);
+        console.log("Request: ", JSON.stringify(req.body));
+        console.log("Error: ", error);
       });
   });
 
