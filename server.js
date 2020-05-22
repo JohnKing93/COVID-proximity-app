@@ -19,6 +19,7 @@ app.use(express.static("public"));
 
 // Database & Routes
 require("./routes/api.js")(app);
+require("./routes/html.js")(app);
 
 // Initialize
 var syncOptions = { force: false };
