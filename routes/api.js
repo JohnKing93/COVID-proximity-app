@@ -7,6 +7,8 @@ module.exports = function(app) {
     db.Coordinates.create({
       lat: req.body.lat,
       long: req.body.long,
+	  devicename: req.body.devicename,
+	  deviceid: req.body.deviceid,
     })
       .then(data => {
         res.json(data);

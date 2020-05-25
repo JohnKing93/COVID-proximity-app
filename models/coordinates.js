@@ -7,7 +7,17 @@ module.exports = function(sequelize, DataTypes) {
     long: {
       type: DataTypes.DOUBLE,
       allowNull: false
-    }
+    },
+	devicename :
+	{
+		type:DataTypes.STRING,
+		allowNull: true
+	},
+	deviceid :
+	{
+		type:DataTypes.STRING,
+		allowNull: true
+	}
   });
   return Coordinates;
 };
